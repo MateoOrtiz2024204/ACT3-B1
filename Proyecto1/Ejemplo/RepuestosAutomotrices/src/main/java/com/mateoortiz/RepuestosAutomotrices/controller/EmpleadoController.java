@@ -44,4 +44,10 @@ public class EmpleadoController {
         Empleado updatedEmpleado = empleadoService.updateEmpleado(id, empleado);
         return ResponseEntity.ok(updatedEmpleado);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteEmpleado(@PathVariable Integer id){
+        empleadoService.deleteEmpleado(id);
+        return ResponseEntity.ok().build();
+    }
 }
