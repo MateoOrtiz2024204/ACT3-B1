@@ -38,4 +38,10 @@ public class EmpleadoController {
 
         }
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Empleado> updateEmpleado(@PathVariable Integer id, @RequestBody Empleado empleado){
+        Empleado updatedEmpleado = empleadoService.updateEmpleado(id, empleado);
+        return ResponseEntity.ok(updatedEmpleado);
+    }
 }
