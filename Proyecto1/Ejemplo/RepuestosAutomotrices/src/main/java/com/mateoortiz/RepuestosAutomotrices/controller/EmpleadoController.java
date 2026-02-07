@@ -22,6 +22,12 @@ public class EmpleadoController {
     @GetMapping
     public List<Empleado> getAllEmpleados(){return empleadoService.getAllEmpleados();}
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Object> getEmpleadoById(@PathVariable Integer id) {
+        Empleado empleado = empleadoService.getEmpleadoById(id);
+        return ResponseEntity.ok(empleado);
+    }
+
     @PostMapping
     public ResponseEntity<Object> createEmpleado(@Valid @RequestBody Empleado empleado){
         try{
@@ -29,6 +35,7 @@ public class EmpleadoController {
             return new ResponseEntity<>(createdEmpleado, HttpStatus.CREATED);
         } catch (IllegalArgumentException e){
             return ResponseEntity.badRequest().body(e.getMessage());
+
         }
     }
 }
