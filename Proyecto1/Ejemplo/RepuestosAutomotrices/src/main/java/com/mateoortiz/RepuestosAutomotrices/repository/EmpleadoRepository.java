@@ -1,6 +1,6 @@
 package com.mateoortiz.RepuestosAutomotrices.repository;
 
-import com.mateoortiz.RepuestosAutomotrices.model.Empleado;
+import com.mateoortiz.RepuestosAutomotrices.entity.Empleado;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

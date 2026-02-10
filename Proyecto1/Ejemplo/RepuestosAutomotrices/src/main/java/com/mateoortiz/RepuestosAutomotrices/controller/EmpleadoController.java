@@ -1,7 +1,7 @@
 package com.mateoortiz.RepuestosAutomotrices.controller;
 
 
-import com.mateoortiz.RepuestosAutomotrices.model.Empleado;
+import com.mateoortiz.RepuestosAutomotrices.entity.Empleado;
 import com.mateoortiz.RepuestosAutomotrices.service.EmpleadoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
