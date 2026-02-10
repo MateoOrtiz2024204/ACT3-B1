@@ -1,6 +1,6 @@
-package com.mateoortiz.RepuestosAutomotrices.service;
+package com.mateoortiz.repuestosAutomotrices.service;
 
-import com.mateoortiz.RepuestosAutomotrices.entity.Empleado;
+import com.mateoortiz.repuestosAutomotrices.entity.Empleado;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.mateoortiz.RepuestosAutomotrices.entity;
+package com.mateoortiz.repuestosAutomotrices.entity;
 
 import jakarta.persistence.*;
 

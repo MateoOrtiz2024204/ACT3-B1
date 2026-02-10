@@ -1,8 +1,8 @@
-package com.mateoortiz.RepuestosAutomotrices.controller;
+package com.mateoortiz.repuestosAutomotrices.controller;
 
 
-import com.mateoortiz.RepuestosAutomotrices.entity.Empleado;
-import com.mateoortiz.RepuestosAutomotrices.service.EmpleadoService;
+import com.mateoortiz.repuestosAutomotrices.entity.Empleado;
+import com.mateoortiz.repuestosAutomotrices.service.EmpleadoService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

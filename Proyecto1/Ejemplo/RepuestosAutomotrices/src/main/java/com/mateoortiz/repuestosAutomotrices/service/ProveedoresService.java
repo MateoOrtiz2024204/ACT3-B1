@@ -1,7 +1,6 @@
-package com.mateoortiz.RepuestosAutomotrices.service;
+package com.mateoortiz.repuestosAutomotrices.service;
 
-import com.mateoortiz.RepuestosAutomotrices.entity.Proveedor;
-import jakarta.persistence.criteria.CriteriaBuilder;
+import com.mateoortiz.repuestosAutomotrices.entity.Proveedor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

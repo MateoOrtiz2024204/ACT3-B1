@@ -1,8 +1,7 @@
-package com.mateoortiz.RepuestosAutomotrices.service;
+package com.mateoortiz.repuestosAutomotrices.service;
 
-import com.mateoortiz.RepuestosAutomotrices.entity.Proveedor;
-import com.mateoortiz.RepuestosAutomotrices.repository.ProveedoresRepository;
-import org.springframework.stereotype.Service;
+import com.mateoortiz.repuestosAutomotrices.entity.Proveedor;
+import com.mateoortiz.repuestosAutomotrices.repository.ProveedoresRepository;
 
 import java.util.List;
 
