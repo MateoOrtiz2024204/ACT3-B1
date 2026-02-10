@@ -2,10 +2,12 @@ package com.mateoortiz.repuestosAutomotrices.service;
 
 import com.mateoortiz.repuestosAutomotrices.entity.Proveedor;
 import com.mateoortiz.repuestosAutomotrices.repository.ProveedoresRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public class ProveedoresServiceImplements {
+@Service
+public class ProveedoresServiceImplements implements ProveedoresService {
     private final ProveedoresRepository proveedoresRepository;
 
     public ProveedoresServiceImplements(ProveedoresRepository proveedoresRepository) {
@@ -16,7 +18,7 @@ public class ProveedoresServiceImplements {
     public List<Proveedor> getAllProveedores() { return proveedoresRepository.findAll(); }
 
     @Override
-    public Proveedor getProveedorById(Integer id) { return proveedoresRepository.findById().orElse(null); }
+    public Proveedor getProveedorById(Integer id) { return proveedoresRepository.findById(id).orElse(null); }
 
     @Override
         public Proveedor saveProveedor(Proveedor proveedor) throws RuntimeException{
